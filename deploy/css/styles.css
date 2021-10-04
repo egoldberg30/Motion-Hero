@@ -365,21 +365,6 @@ ul li {
   list-style: none;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-areas: ". grid-content .";
-  grid-template-columns: 15px auto 15px;
-  height: 100vh;
-}
-@media (min-width: 1440px) {
-  .container-grid {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-.container-grid > div {
-  grid-area: grid-content;
-}
-
 /* =============
     Typography
 ============= */
@@ -426,11 +411,21 @@ ul {
   justify-content: center;
   list-style: none;
 }
+ul a {
+  text-decoration: none;
+}
 ul li {
   margin-left: 6vw;
 }
+ul li a:link, ul li a:visited {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 1rem;
+  color: beige;
+  transition: 0.5s;
+}
 ul li a:link a:hover, ul li a:link a:active, ul li a:visited a:hover, ul li a:visited a:active {
-  font-weight: 300;
+  color: rgba(255, 253, 235, 0.6);
 }
 
 /* =============
@@ -444,9 +439,14 @@ header {
 }
 header > div {
   display: grid;
-  display: center;
+  align-items: center;
   grid-template-columns: auto 7% auto;
   padding: 8px, 16px;
+}
+header > div section {
+  display: inline-block;
+  align-items: center;
+  height: 100%;
 }
 
 /* =============

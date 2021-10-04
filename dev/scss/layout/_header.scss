@@ -8,10 +8,19 @@ header{
     background-color: $red;
 
     >div{
-            display: grid;
-            display: center;
-            grid-template-columns: auto 7% auto;
-            padding: 8px, 16px;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 7% auto;
+        padding: 8px, 16px;
+
+        section{
+            display: inline-block;
+            align-items: center;
+            height: 100%;
+    
+        }
+
     }
 
 //        section{

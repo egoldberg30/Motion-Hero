@@ -11,15 +11,24 @@ ul{
     justify-content: center;
     list-style: none;
 
-    li{
+    a{
+        text-decoration: none;
+    }
 
+    li{
         margin-left: 6vw;
 
         a:link, a:visited{
+            
+            font-family: Jost;
+            font-weight: 400;
+            font-size: rem-calc(16);
+            color: beige;
+            transition: .5s;
 
             a:hover, a:active{
-
-                font-weight: 300;
+                
+                color: rgba(255, 253, 235, 0.6);
             }
 
 
