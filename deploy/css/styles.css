@@ -405,9 +405,8 @@ textarea {
     Navigation
 ============= */
 ul {
-  height: 100%;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   list-style: none;
 }
@@ -415,7 +414,8 @@ ul a {
   text-decoration: none;
 }
 ul li {
-  margin-left: 6vw;
+  text-align: center;
+  width: 100%;
 }
 ul li a:link, ul li a:visited {
   font-family: Jost;
@@ -427,6 +427,12 @@ ul li a:link, ul li a:visited {
 ul li a:link a:hover, ul li a:link a:active, ul li a:visited a:hover, ul li a:visited a:active {
   color: rgba(255, 253, 235, 0.6);
 }
+ul #logo-cell {
+  flex-grow: 2;
+}
+ul #logo-cell img {
+  width: 50%;
+}
 
 /* =============
     Header
@@ -436,39 +442,33 @@ header {
   width: 100%;
   height: 55px;
   background-color: #790002;
+  z-index: 1000;
 }
 header > div {
   display: grid;
   align-items: center;
-  grid-template-columns: auto 7% auto;
-  padding: 8px, 16px;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: ". header .";
 }
-header > div section {
-  display: inline-block;
-  align-items: center;
-  height: 100%;
+header > div ul {
+  grid-area: header;
 }
 
 /* =============
     Footer
 ============= */
 #hero {
+  height: 90vh;
   width: 100%;
-}
-#hero #heroimage {
   background-image: url(../img/hero-image-optimized.png);
   background-size: cover;
   background-position: center;
-  width: 100%;
   overflow: hidden;
-}
-@media (min-width: 1440px) {
-  #hero #heroimage {
-    grid-area: hero;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #hero #herocontent {
-  align-content: center;
   Color: #790002;
 }
 #hero #herocontent h1 {
