@@ -1,0 +1,35 @@
+#hero{
+    //height: 90vh;
+    width: 100%;
+
+   @include xl{
+       display: grid;
+        grid-template-areas: ". hero .";
+       grid-template-columns: auto 1440px auto;
+    }
+
+    #heroimage{
+        background-image: url(../img/hero-image-optimized.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        overflow: hidden;
+
+       @include xl{
+           grid-area: hero;
+        }
+    }
+
+    #herocontent{
+       
+        h1{
+            color: $brown;
+
+        }
+
+        h2{
+
+
+        }
+    }
+}

@@ -452,3 +452,28 @@ header > div section {
 /* =============
     Footer
 ============= */
+#hero {
+  width: 100%;
+}
+@media (min-width: 1440px) {
+  #hero {
+    display: grid;
+    grid-template-areas: ". hero .";
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#hero #heroimage {
+  background-image: url(../img/hero-image-optimized.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1440px) {
+  #hero #heroimage {
+    grid-area: hero;
+  }
+}
+#hero #herocontent h1 {
+  color: #442727;
+}
