@@ -478,6 +478,9 @@ header > div section {
 #hero #herocontent h2 {
   font-weight: 500;
   font-size: 1.75rem;
+  width: 678px;
+  height: 84px;
+  line-height: 32px;
 }
 #hero #herocontent h2 a {
   Color: #790002;
@@ -485,14 +488,21 @@ header > div section {
 
 body {
   Color: #442727;
+  background-color: beige;
 }
 body h2 {
   font-weight: 500;
   font-size: 1.75rem;
+  padding: 0px 15%;
 }
 body h3 {
   font-weight: 300;
   font-size: 1.125rem;
+  line-height: 24px;
+  position: absolute;
+  width: 487px;
+  height: 148px;
+  padding: 0px 20%;
 }
 body h3 a {
   Color: #442727;

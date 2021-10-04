@@ -2,7 +2,6 @@
     //height: 90vh;
     width: 100%;
 
-
     #heroimage{
         background-image: url(../img/hero-image-optimized.png);
         background-size: cover;
@@ -16,7 +15,6 @@
     }
 
     #herocontent{
-        
         align-content: center;
         Color: $red;
 
@@ -27,6 +25,9 @@
         h2{
             font-weight: 500;
             font-size: rem-calc(28);
+            width: 678px;
+            height: 84px;
+            line-height: 32px;
             a{
                 Color: $red;
             }
