@@ -2,11 +2,6 @@
     //height: 90vh;
     width: 100%;
 
-   @include xl{
-       display: grid;
-        grid-template-areas: ". hero .";
-       grid-template-columns: auto 1440px auto;
-    }
 
     #heroimage{
         background-image: url(../img/hero-image-optimized.png);
@@ -21,15 +16,20 @@
     }
 
     #herocontent{
-       
+        
+        align-content: center;
+        Color: $red;
+
         h1{
-            color: $brown;
-
+            font-weight: 700;
+            font-size: rem-calc(60);
         }
-
         h2{
-
-
+            font-weight: 500;
+            font-size: rem-calc(28);
+            a{
+                Color: $red;
+            }
         }
     }
 }

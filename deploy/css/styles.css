@@ -422,7 +422,7 @@ ul li a:link, ul li a:visited {
   font-weight: 400;
   font-size: 1rem;
   color: beige;
-  transition: 0.5s;
+  transition: 2s;
 }
 ul li a:link a:hover, ul li a:link a:active, ul li a:visited a:hover, ul li a:visited a:active {
   color: rgba(255, 253, 235, 0.6);
@@ -455,13 +455,6 @@ header > div section {
 #hero {
   width: 100%;
 }
-@media (min-width: 1440px) {
-  #hero {
-    display: grid;
-    grid-template-areas: ". hero .";
-    grid-template-columns: auto 1440px auto;
-  }
-}
 #hero #heroimage {
   background-image: url(../img/hero-image-optimized.png);
   background-size: cover;
@@ -474,6 +467,33 @@ header > div section {
     grid-area: hero;
   }
 }
+#hero #herocontent {
+  align-content: center;
+  Color: #790002;
+}
 #hero #herocontent h1 {
-  color: #442727;
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+#hero #herocontent h2 {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+#hero #herocontent h2 a {
+  Color: #790002;
+}
+
+body {
+  Color: #442727;
+}
+body h2 {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+body h3 {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+body h3 a {
+  Color: #442727;
 }
