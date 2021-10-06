@@ -415,7 +415,6 @@ ul a {
 }
 ul li {
   text-align: center;
-  flex-grow: 2;
 }
 ul li a:link, ul li a:visited {
   font-family: Jost;
@@ -428,7 +427,7 @@ ul li a:link a:hover, ul li a:link a:active, ul li a:visited a:hover, ul li a:vi
   color: rgba(255, 253, 235, 0.6);
 }
 ul #logo-cell {
-  flex-grow: 4;
+  flex-grow: 2;
   width: 50%;
 }
 
@@ -445,13 +444,14 @@ header {
 header > div {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  height: 55px;
 }
 header > div ul {
   grid-area: header;
 }
-header > div a {
+header > div #logo-cell {
   width: 94px;
   flex-grow: 2;
 }
@@ -460,7 +460,7 @@ header > div a {
     Footer
 ============= */
 #hero {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   background-image: url(../img/hero-image-optimized.jpg);
   background-size: cover;
