@@ -443,13 +443,17 @@ header {
   z-index: 1000;
 }
 header > div {
-  display: grid;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  grid-template-columns: auto 80% auto;
-  grid-template-areas: ". header .";
 }
 header > div ul {
   grid-area: header;
+}
+header > div a {
+  width: 94px;
+  flex-grow: 2;
 }
 
 /* =============
@@ -472,6 +476,7 @@ header > div ul {
 #hero #herocontent h1 {
   font-weight: 700;
   font-size: 3.75rem;
+  padding: 0px 15%;
 }
 #hero #herocontent h2 {
   font-weight: 500;
@@ -479,6 +484,7 @@ header > div ul {
   width: 678px;
   height: 84px;
   line-height: 32px;
+  padding: 0px 20%;
 }
 #hero #herocontent h2 a {
   Color: #790002;

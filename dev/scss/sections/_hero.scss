@@ -17,6 +17,7 @@
         h1{
             font-weight: 700;
             font-size: rem-calc(60);
+            padding: 0px 15%;
         }
         h2{
             font-weight: 500;
@@ -24,6 +25,8 @@
             width: 678px;
             height: 84px;
             line-height: 32px;
+            padding: 0px 20%;
+
             a{
                 Color: $red;
             }

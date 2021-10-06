@@ -10,31 +10,19 @@ header{
 
     >div{
 
-        display: grid;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
         align-items: center;
-        grid-template-columns: auto 80% auto;
-        grid-template-areas: ". header .";
         // padding: 8px, 16px;
 
         ul{
             grid-area: header;
         }
 
-        // section{
-        //     display: inline-block;
-        //     align-items: center;
-        //     height: 100%;
-    
-        // }
-
+        a{
+            width: 94px;
+            flex-grow: 2;
+        }
     }
-
-//        section{
-//            a{
-//              display: inline-block;
-//                width: 94 px;
-//                height: 38 px;
-//            }
-//        }
-
 }
