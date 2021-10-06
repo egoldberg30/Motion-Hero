@@ -415,7 +415,7 @@ ul a {
 }
 ul li {
   text-align: center;
-  width: 100%;
+  flex-grow: 2;
 }
 ul li a:link, ul li a:visited {
   font-family: Jost;
@@ -428,9 +428,7 @@ ul li a:link a:hover, ul li a:link a:active, ul li a:visited a:hover, ul li a:vi
   color: rgba(255, 253, 235, 0.6);
 }
 ul #logo-cell {
-  flex-grow: 2;
-}
-ul #logo-cell img {
+  flex-grow: 4;
   width: 50%;
 }
 
@@ -460,7 +458,7 @@ header > div ul {
 #hero {
   height: 90vh;
   width: 100%;
-  background-image: url(../img/hero-image-optimized.png);
+  background-image: url(../img/hero-image-optimized.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
