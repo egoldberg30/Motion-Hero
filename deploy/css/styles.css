@@ -421,7 +421,7 @@ ul li a:link, ul li a:visited {
   font-family: Jost;
   font-weight: 400;
   font-size: 1rem;
-  color: beige;
+  color: #FFFDEB;
   transition: 2s;
 }
 ul li a:link a:hover, ul li a:link a:active, ul li a:visited a:hover, ul li a:visited a:active {
@@ -486,7 +486,7 @@ header > div ul {
 
 body {
   Color: #442727;
-  background-color: beige;
+  background-color: #FFFDEB;
 }
 body h2 {
   font-weight: 500;
