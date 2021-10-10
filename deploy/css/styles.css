@@ -449,6 +449,7 @@ header > div ul {
 }
 header > div #logo-cell {
   width: 90px;
+  padding: 20px 0px;
 }
 
 /* =============
