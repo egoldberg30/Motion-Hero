@@ -3,7 +3,7 @@
 ============= */
 header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 55px;
     background-color: $red;
     z-index: 1000;
@@ -14,10 +14,13 @@ header{
 //        justify-content: space-around;
         justify-content: space-evenly;
         align-items: center;
-        height: 55px;
+        height: 100%;
+        width: 100%;
 
         ul{
             grid-area: header;
+            justify-content: space-evenly;
+            justify-content: space-around;
         }
 
         #logo-cell{

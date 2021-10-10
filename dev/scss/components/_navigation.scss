@@ -27,7 +27,7 @@ ul{
             font-weight: 400;
             font-size: rem-calc(16);
             color: $beige;
-            transition: 2s;
+          //  transition: 2s;
 
             a:hover, a:active{
                 
@@ -39,8 +39,8 @@ ul{
 
     }
 
-    #logo-cell{
-        flex-grow: 2;
-            width: 50%;
-        }
+ //   #logo-cell{
+        //flex-grow: 2;
+        // width: 50%;
+ //       }
 }
