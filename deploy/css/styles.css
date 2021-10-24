@@ -460,6 +460,7 @@ header > div #logo-cell {
   width: 100vw;
   background-image: url(../img/hero-image-optimized.png);
   background-position: bottom;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
