@@ -458,8 +458,8 @@ header > div #logo-cell {
 #hero {
   height: 70vh;
   width: 100vw;
-  background-image: url(../img/hero-image-optimized.jpg);
-  background-position: center;
+  background-image: url(../img/hero-image-optimized.png);
+  background-position: bottom;
   display: flex;
   align-items: center;
 }
@@ -475,10 +475,14 @@ header > div #logo-cell {
 #hero #herocontent h2 {
   font-weight: 500;
   font-size: 1.75rem;
-  width: 678px;
-  height: 84px;
   line-height: 36px;
   padding: 5px 20vw;
+}
+@media (min-width: 1024px) {
+  #hero #herocontent h2 {
+    width: 610px;
+    height: 84px;
+  }
 }
 #hero #herocontent h2 a {
   Color: #790002;
