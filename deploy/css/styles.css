@@ -455,6 +455,18 @@ header > div #logo-cell {
 /* =============
     Footer
 ============= */
+#preloader {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  z-index: 12000;
+  background-color: #EDE9CD;
+}
+#preloader > div {
+  background-color: #EDE9CD;
+}
 #hero {
   height: 70vh;
   width: 100vw;
