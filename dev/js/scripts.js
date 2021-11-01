@@ -12,7 +12,7 @@ const mainTL = gsap.timeline();
 function AllElements(){
     const tl = gsap.timeline();
 
-    tl.from ("#XrayBoard",{duration: 2, x:"-=1000", ease: "Power3"});
+    tl.from ("#XrayBoard",{duration: 2, x:"-=1000"});
 
     tl.to("#Hand1", { morphSVG:"#Hand2", duration: 1})
     // .to("#Hand2", { morphSVG:"#Hand2", duration: 1})
@@ -26,8 +26,8 @@ function AllElements(){
 
     .to ("#Button",{duration: 1.1, y:"1", ease: "back"})
 
-    .to("#Hand9", { morphSVG:"#Hand 10", duration: .1})
-    .to("#Hand10", { morphSVG:"#Hand 11", duration: .1});
+    .to("#Hand9", { morphSVG:"#Hand10", duration: .1})
+    .to("#Hand10", { morphSVG:"#Hand11", duration: .1});
 
     return tl; 
 }
