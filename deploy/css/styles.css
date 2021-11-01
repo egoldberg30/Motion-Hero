@@ -467,7 +467,34 @@ header > div #logo-cell {
 #preloader > div {
   background-color: #EDE9CD;
 }
-#preloader #Hand2 #Hand3 #Hand4 #Hand5 #Hand6 #Hand7 #Hand8 #Hand9 #Hand10 #Hand11 {
+#preloader #Hand2 {
+  visibility: hidden;
+}
+#preloader #Hand3 {
+  visibility: hidden;
+}
+#preloader #Hand4 {
+  visibility: hidden;
+}
+#preloader #Hand5 {
+  visibility: hidden;
+}
+#preloader #Hand6 {
+  visibility: hidden;
+}
+#preloader #Hand7 {
+  visibility: hidden;
+}
+#preloader #Hand8 {
+  visibility: hidden;
+}
+#preloader #Hand9 {
+  visibility: hidden;
+}
+#preloader #Hand10 {
+  visibility: hidden;
+}
+#preloader #Hand11 {
   visibility: hidden;
 }
 
