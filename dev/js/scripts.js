@@ -1,5 +1,7 @@
 import { gsap } from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import {CustomEase} from "gsap/CustomEase";
+
 gsap.registerPlugin(MorphSVGPlugin);
 const mainTL = gsap.timeline();
 
@@ -17,20 +19,21 @@ function AllElements(){
 
     // gsap.set(["#Hand1", "#Hand2", "#Hand3", "#Hand4", "#Hand5", "#Hand6", "#Hand7", "#Hand8", "#Hand9", "#Hand10", "#Hand11"], {morphSVG: "#Hand11", ease: "steps (11)"});
 
-    tl.to("#Hand1", {morphSVG:"#Hand2", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand2", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand3", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand4", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand5", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand6", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand7", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand8", duration: .2})
-    .to("#Hand1", {morphSVG:"#Hand9", duration: .2})
+    tl.to("#Hand1", {morphSVG:"#Hand2", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand2", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand3", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand4", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand5", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand6", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand7", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand8", duration: .1})
+    .to("#Hand1", {morphSVG:"#Hand9", duration: .1})
 
-    .to ("#Button",{duration: 1.1, y:"1", ease: "back"})
+    .to ("#Button",{duration: 1, y:"2", ease: CustomEase.create("custom", "M0,0 C0.354,0.5 0.352,0.5 0.352,0.5 0.352,0.5 0.804,0.032 1,0 ")})
 
     .to("#Hand1", {morphSVG:"#Hand10", duration: .2})
     .to("#Hand1", {morphSVG:"#Hand11", duration: .2})
+    .to("#Hand1", {y:"+=20px", x:"+=25", duration: .2});
 
     return tl; 
 }
