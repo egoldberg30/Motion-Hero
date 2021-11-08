@@ -467,9 +467,6 @@ header > div #logo-cell {
 #preloader > div {
   background-color: #EDE9CD;
 }
-#preloader > div SVG #BlackScreen {
-  opacity: 0;
-}
 #preloader #Hand2, #preloader #Hand3, #preloader #Hand4, #preloader #Hand5, #preloader #Hand6, #preloader #Hand7, #preloader #Hand8, #preloader #Hand9, #preloader #Hand10, #preloader #Hand11 {
   visibility: hidden;
 }
