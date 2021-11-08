@@ -33,11 +33,11 @@ function AllElements(){
 
     .to("#Hand1", {morphSVG:"#Hand10", duration: .1})
     .to("#Hand1", {morphSVG:"#Hand11", duration: .1})
-    .to("#Hand1", {y:"+=20px", x:"+=25", duration: .1})
+    .to("#Hand1", {y:"+=20px", x:"+=25", duration: .1});
 
     // .to("BlackScreen", {alpha:0, duration: .3});
 
-    return tl; 
+    return tl;
 }
 
 mainTL.add (AllElements());
