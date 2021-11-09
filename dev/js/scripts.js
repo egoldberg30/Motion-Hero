@@ -1,19 +1,18 @@
 import { gsap } from "gsap";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import {CustomEase} from "gsap/CustomEase";
 
 
 
 
-gsap.registerPlugin(GSDevTools);
+// gsap.registerPlugin(GSDevTools);
 gsap.registerPlugin(MorphSVGPlugin);
 const mainTL = gsap.timeline();
 
 // THIS WAS FROM THE PREVIOUS JS ASSIGNMENT FOR THE HERO //
 // mainTL.from("#hero h2",{duration:1, alpha:0});
 // mainTL.from("header",{duration:1, alpha:0, x:"-1000"});
-
 
 
 function AllElements(){
@@ -191,6 +190,6 @@ function AllElements(){
 }
 
 
-GSDevTools.create();
+// GSDevTools.create();
 
 mainTL.add (AllElements());
