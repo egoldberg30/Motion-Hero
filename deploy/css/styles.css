@@ -467,7 +467,10 @@ header > div #logo-cell {
 #preloader > div {
   background-color: #EDE9CD;
 }
-#preloader #Hand2, #preloader #Hand3, #preloader #Hand4, #preloader #Hand5, #preloader #Hand6, #preloader #Hand7, #preloader #Hand8, #preloader #Hand9, #preloader #Hand10, #preloader #Hand11 {
+#preloader > div SVG #Hand2, #preloader > div SVG #Hand3, #preloader > div SVG #Hand4, #preloader > div SVG #Hand5, #preloader > div SVG #Hand6, #preloader > div SVG #Hand7, #preloader > div SVG #Hand8, #preloader > div SVG #Hand9, #preloader > div SVG #Hand10, #preloader > div SVG #Hand11 {
+  visibility: hidden;
+}
+#preloader > div SVG #SkeletonInMotion_1, #preloader > div SVG #SkeletonInMotion_2, #preloader > div SVG #SkeletonInMotion_3, #preloader > div SVG #SkeletonInMotion_4, #preloader > div SVG #SkeletonInMotion_5, #preloader > div SVG #SkeletonInMotion_6, #preloader > div SVG #SkeletonInMotion_7, #preloader > div SVG #SkeletonInMotion_8, #preloader > div SVG #SkeletonInMotion_9, #preloader > div SVG #SkeletonInMotion_10, #preloader > div SVG #SkeletonInMotion_11, #preloader > div SVG #SkeletonInMotion_12, #preloader > div SVG #SkeletonInMotion_13, #preloader > div SVG #SkeletonInMotion_14, #preloader > div SVG #SkeletonInMotion_15, #preloader > div SVG #SkeletonInMotion_16, #preloader > div SVG #SkeletonInMotion_17, #preloader > div SVG #SkeletonInMotion_18, #preloader > div SVG #SkeletonInMotion_19, #preloader > div SVG #SkeletonInMotion_20 {
   visibility: hidden;
 }
 
