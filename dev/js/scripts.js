@@ -16,7 +16,7 @@ const mainTL = gsap.timeline();
 // mainTL.from("header",{duration:1, alpha:0, x:"-1000"});
 
 
-function AllElements(){
+function PreLoader(){
     const tl = gsap.timeline();
 
     tl.from ("svg",{duration: 2, x:"-=1000"});
@@ -555,7 +555,7 @@ function AllElements(){
     .to("#RFingerA1", {morphSVG:"#RFingerA1_20", duration: .1}, "SkeletonInMotion_20")
     .to("#RWrist", {morphSVG:"#RWrist_20", duration: .1}, "SkeletonInMotion_20")
 
-    .to("#LightsOff", {alpha:0, duration: .05});
+    .to("#LightsOff", {autoAlpha:1, duration: .05}), "+=2";
 
     return tl;
 }
@@ -563,4 +563,4 @@ function AllElements(){
 
 // GSDevTools.create();
 
-mainTL.add (AllElements());
+mainTL.add (PreLoader());
