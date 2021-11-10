@@ -553,7 +553,9 @@ function AllElements(){
     .to("#RFingerA3", {morphSVG:"#RFingerA3_20", duration: .1}, "SkeletonInMotion_20")
     .to("#RFingerA2", {morphSVG:"#RFingerA2_20", duration: .1}, "SkeletonInMotion_20")
     .to("#RFingerA1", {morphSVG:"#RFingerA1_20", duration: .1}, "SkeletonInMotion_20")
-    .to("#RWrist", {morphSVG:"#RWrist_20", duration: .1}, "SkeletonInMotion_20");
+    .to("#RWrist", {morphSVG:"#RWrist_20", duration: .1}, "SkeletonInMotion_20")
+
+    .to("#LightsOff", {alpha:0, duration: .05});
 
     return tl;
 }
