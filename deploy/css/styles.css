@@ -508,7 +508,10 @@ header > div #logo-cell {
   }
 }
 #hero #herocontent h2 a {
-  Color: #790002;
+  color: #790002;
+}
+#hero #herocontent h2 a:hover, #hero #herocontent h2 a:active {
+  color: rgba(121, 0, 2, 0.5);
 }
 
 body {
@@ -528,4 +531,7 @@ body h3 {
 }
 body h3 a {
   Color: #442727;
+}
+body h3 a:hover, body h3 a:active {
+  color: rgba(121, 0, 2, 0.5);
 }

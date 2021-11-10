@@ -18,5 +18,9 @@ body{
         a{
             Color: $brown;
         }
+
+        a:hover, a:active{
+            color: rgba(121, 0, 2, 0.5);
+        }
     }
 }
