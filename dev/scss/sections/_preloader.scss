@@ -1,14 +1,17 @@
 #preloader{
     position: fixed;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     z-index: 12000;
     background-color: $beige2;
     
     >div{
         background-color: $beige2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
 
         SVG{
             #Hand1, #Hand2, #Hand3, #Hand4, #Hand5, #Hand6, #Hand7, #Hand8, #Hand9, #Hand10, #Hand11{
