@@ -1,27 +1,16 @@
 import { gsap } from "gsap";
-// import { GSDevTools } from "gsap/GSDevTools";
+import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import {CustomEase} from "gsap/CustomEase";
 
-
-// gsap.registerPlugin(GSDevTools);
-gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
 const mainTL = gsap.timeline();
-
-
-
-
-// THIS WAS FROM THE PREVIOUS JS ASSIGNMENT FOR THE HERO //
-// mainTL.from("#hero h2",{duration:1, alpha:0});
-// mainTL.from("header",{duration:1, alpha:0, x:"-1000"});
 
 
 function PreLoader(){
     const tl = gsap.timeline();
 
     tl.from ("svg",{duration: 2, x:"-=1000"});
-
-    // gsap.set(["#Hand1", "#Hand2", "#Hand3", "#Hand4", "#Hand5", "#Hand6", "#Hand7", "#Hand8", "#Hand9", "#Hand10", "#Hand11"], {morphSVG: "#Hand11", ease: "steps (11)"});
 
     tl.to("#Hand1", {morphSVG:"#Hand2", duration: .05})
     .to("#Hand1", {morphSVG:"#Hand2", duration: .05})
@@ -555,12 +544,34 @@ function PreLoader(){
     .to("#RFingerA1", {morphSVG:"#RFingerA1_20", duration: .1}, "SkeletonInMotion_20")
     .to("#RWrist", {morphSVG:"#RWrist_20", duration: .1}, "SkeletonInMotion_20")
 
-    .to("#LightsOff", {autoAlpha:1, duration: .05}), "+=2";
-
+    .to("#LightsOff", {autoAlpha:1, duration: .01}, "+=.05")
+    .to("#preloader", {alpha:0, duration: .3, onComplete:removePreLoader}, "+=.5");
+    // .to("#Background", {fill: #000, black duration: .05}, "+=2");
+    // .to("#Background", {autoAlpha:0, duration: .05});
+    
     return tl;
 }
 
 
-// GSDevTools.create();
+function removePreLoader(){
+    window.scrollTo(0,0);
+    gsap.set("#preloader", {display:"none"});
+}
 
-mainTL.add (PreLoader());
+function Hero(){
+    const tl = gsap.timeline();
+    tl.from("header",{duration:.75, alpha:0, y:"+80"}, "-=30%")
+      .from("h1",{duration:.75, alpha:0, y:"+70"}, "-=50%")
+      .from("#hero_h2",{duration:.75, alpha:0, y:"+70"}, "-=90%")
+      .from("#content_h2",{duration:.75, alpha:0, y:"+70"}, "-=60%")
+      .from("h3",{duration:.6, alpha:0, y:"+70"}, "-=90%");
+    return tl;
+}
+
+
+mainTL.add(PreLoader())
+        // .add(removePreLoader())
+        .add(Hero());
+
+
+GSDevTools.create();
