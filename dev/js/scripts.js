@@ -12,21 +12,21 @@ function PreLoader(){
 
     tl.from ("svg",{duration: 2, x:"-=1000"});
 
-    tl.to("#Hand1", {morphSVG:"#Hand2", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand2", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand3", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand4", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand5", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand6", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand7", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand8", duration: .05})
-    .to("#Hand1", {morphSVG:"#Hand9", duration: .05})
+    tl.to("#Hand0", {morphSVG:"#Hand1", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand2", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand3", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand4", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand5", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand6", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand7", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand8", duration: .05})
+    .to("#Hand0", {morphSVG:"#Hand9", duration: .05})
 
     .to ("#Button",{duration: .4, y:"2", ease: CustomEase.create("custom", "M0,0 C0.354,0.5 0.352,0.5 0.352,0.5 0.352,0.5 0.804,0.032 1,0 ")}, "-=.05")
 
-    .to("#Hand1", {morphSVG:"#Hand10", duration: .1}, "-=.2")
-    .to("#Hand1", {morphSVG:"#Hand11", duration: .1})
-    .to("#Hand1", {y:"+=20px", x:"+=25", duration: .1})
+    .to("#Hand0", {morphSVG:"#Hand10", duration: .1}, "-=.2")
+    .to("#Hand0", {morphSVG:"#Hand11", duration: .1})
+    .to("#Hand0", {y:"+=20px", x:"+=25", duration: .1})
 
     .to("#BlackScreen", {alpha:0, duration: .6})
     
