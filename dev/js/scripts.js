@@ -3,7 +3,7 @@ import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import {CustomEase} from "gsap/CustomEase";
 
-gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
+gsap.registerPlugin(GSDevTools, MorphSVGPlugin, CustomEase);
 const mainTL = gsap.timeline();
 
 
@@ -12,15 +12,15 @@ function PreLoader(){
 
     tl.from ("svg",{duration: 2, x:"-=1000"});
 
-    tl.to("#Hand0", {morphSVG:"#Hand1", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand2", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand3", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand4", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand5", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand6", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand7", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand8", duration: .05})
-    .to("#Hand0", {morphSVG:"#Hand9", duration: .05})
+    tl.to("#Hand0", {morphSVG:"#Hand1", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand2", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand3", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand4", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand5", duration: .04})
+    .to("#Hand0", {morphSVG:"#Hand6", duration: .04})
+    .to("#Hand0", {morphSVG:"#Hand7", duration: .04})
+    .to("#Hand0", {morphSVG:"#Hand8", duration: .04})
+    .to("#Hand0", {morphSVG:"#Hand9", duration: .03})
 
     .to ("#Button",{duration: .4, y:"2", ease: CustomEase.create("custom", "M0,0 C0.354,0.5 0.352,0.5 0.352,0.5 0.352,0.5 0.804,0.032 1,0 ")}, "-=.05")
 
@@ -28,7 +28,7 @@ function PreLoader(){
     .to("#Hand0", {morphSVG:"#Hand11", duration: .1})
     .to("#Hand0", {y:"+=20px", x:"+=25", duration: .1})
 
-    .to("#BlackScreen", {alpha:0, duration: .6})
+    .to("#BlackScreen", {alpha:0, duration: .6}, "+=.3")
     
     .to("#ArmR", {morphSVG:"#ArmR_1", duration: .05}, "SkeletonInMotion_1")
     .to("#RForearm2", {morphSVG:"#RForearm2_1", duration: .05}, "SkeletonInMotion_1")
@@ -546,12 +546,8 @@ function PreLoader(){
 
     .to("#LightsOff", {autoAlpha:1, duration: .01}, "+=.05")
     .to("#preloader", {alpha:0, duration: .3, onComplete:removePreLoader}, "+=.5");
-    // .to("#Background", {fill: #000, black duration: .05}, "+=2");
-    // .to("#Background", {autoAlpha:0, duration: .05});
-    
     return tl;
 }
-
 
 function removePreLoader(){
     window.scrollTo(0,0);
@@ -568,10 +564,7 @@ function Hero(){
     return tl;
 }
 
-
 mainTL.add(PreLoader())
-        // .add(removePreLoader())
-        .add(Hero());
+      .add(Hero());
 
-
-GSDevTools.create();
+// GSDevTools.create();
