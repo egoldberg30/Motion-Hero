@@ -26,10 +26,12 @@ function PreLoader(){
 
     .to("#Hand0", {morphSVG:"#Hand10", duration: .1}, "-=.2")
     .to("#Hand0", {morphSVG:"#Hand11", duration: .1})
-    .to("#Hand0", {y:"+=20px", x:"+=25", duration: .1})
+    .to("#Hand0", {y:"+=20px", x:"+=25", duration: .1});
 
-    .to("#BlackScreen", {alpha:0, duration: .6}, "+=.3")
-    
+    tl.from("#WhiteScreen", {scaleX:0, transformOrigin:"50% 50%", duration: .05, ease: "circ.out"}, "-=.4")
+    .to("#BlackScreen", {alpha:0, duration: .01})
+    .to("#WhiteScreen", {alpha:0, duration: .9})
+
     .to("#ArmR", {morphSVG:"#ArmR_1", duration: .05}, "SkeletonInMotion_1")
     .to("#RForearm2", {morphSVG:"#RForearm2_1", duration: .05}, "SkeletonInMotion_1")
     .to("#RForearm1", {morphSVG:"#RForearm1_1", duration: .05}, "SkeletonInMotion_1")
