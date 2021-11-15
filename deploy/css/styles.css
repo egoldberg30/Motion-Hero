@@ -460,7 +460,6 @@ header > div #logo-cell {
   width: 100vw;
   height: 100vh;
   z-index: 12000;
-  background-color: #EDE9CD;
 }
 #preloader > div {
   background-color: #EDE9CD;
@@ -476,7 +475,7 @@ header > div #logo-cell {
 #preloader > div SVG #SkeletonInMotion_1, #preloader > div SVG #SkeletonInMotion_2, #preloader > div SVG #SkeletonInMotion_3, #preloader > div SVG #SkeletonInMotion_4, #preloader > div SVG #SkeletonInMotion_5, #preloader > div SVG #SkeletonInMotion_6, #preloader > div SVG #SkeletonInMotion_7, #preloader > div SVG #SkeletonInMotion_8, #preloader > div SVG #SkeletonInMotion_9, #preloader > div SVG #SkeletonInMotion_10, #preloader > div SVG #SkeletonInMotion_11, #preloader > div SVG #SkeletonInMotion_12, #preloader > div SVG #SkeletonInMotion_13, #preloader > div SVG #SkeletonInMotion_14, #preloader > div SVG #SkeletonInMotion_15, #preloader > div SVG #SkeletonInMotion_16, #preloader > div SVG #SkeletonInMotion_17, #preloader > div SVG #SkeletonInMotion_18, #preloader > div SVG #SkeletonInMotion_19, #preloader > div SVG #SkeletonInMotion_20 {
   visibility: hidden;
 }
-#preloader > div SVG #LightsOff {
+#preloader > div SVG #LightsOff, #preloader > div SVG #preloader_screenfill {
   visibility: hidden;
 }
 
@@ -531,6 +530,7 @@ body h3 {
   font-size: 1.125rem;
   line-height: 28px;
   padding: 5px 20vw;
+  padding-bottom: 50px;
 }
 body h3 a {
   Color: #442727;

@@ -12,23 +12,23 @@ function PreLoader(){
 
     tl.from ("svg",{duration: 2, x:"-=1000"});
 
-    tl.to("#Hand0", {morphSVG:"#Hand1", duration: .03})
-    .to("#Hand0", {morphSVG:"#Hand2", duration: .03})
-    .to("#Hand0", {morphSVG:"#Hand3", duration: .03})
-    .to("#Hand0", {morphSVG:"#Hand4", duration: .03})
-    .to("#Hand0", {morphSVG:"#Hand5", duration: .04})
-    .to("#Hand0", {morphSVG:"#Hand6", duration: .04})
-    .to("#Hand0", {morphSVG:"#Hand7", duration: .04})
-    .to("#Hand0", {morphSVG:"#Hand8", duration: .04})
-    .to("#Hand0", {morphSVG:"#Hand9", duration: .03})
+    tl.to("#Hand0", {morphSVG:"#Hand1", duration: .02})
+    .to("#Hand0", {morphSVG:"#Hand2", duration: .02})
+    .to("#Hand0", {morphSVG:"#Hand3", duration: .02})
+    .to("#Hand0", {morphSVG:"#Hand4", duration: .02})
+    .to("#Hand0", {morphSVG:"#Hand5", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand6", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand7", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand8", duration: .03})
+    .to("#Hand0", {morphSVG:"#Hand9", duration: .02})
 
     .to ("#Button",{duration: .4, y:"2", ease: CustomEase.create("custom", "M0,0 C0.354,0.5 0.352,0.5 0.352,0.5 0.352,0.5 0.804,0.032 1,0 ")}, "-=.05")
 
-    .to("#Hand0", {morphSVG:"#Hand10", duration: .1}, "-=.2")
-    .to("#Hand0", {morphSVG:"#Hand11", duration: .1})
-    .to("#Hand0", {y:"+=20px", x:"+=25", duration: .1});
+    .to("#Hand0", {morphSVG:"#Hand10", duration: .04}, "-=.15")
+    .to("#Hand0", {morphSVG:"#Hand11", duration: .04})
+    .to("#Hand0", {y:"+=20px", x:"+=25", duration: .04});
 
-    tl.from("#WhiteScreen", {scaleX:0, transformOrigin:"50% 50%", duration: .05, ease: "circ.out"}, "-=.4")
+    tl.from("#WhiteScreen", {scaleX:0, transformOrigin:"50% 50%", duration: .05, ease: "circ.out"}, "-=.3")
     .to("#BlackScreen", {alpha:0, duration: .01})
     .to("#WhiteScreen", {alpha:0, duration: .9})
 
@@ -547,6 +547,10 @@ function PreLoader(){
     .to("#RWrist", {morphSVG:"#RWrist_20", duration: .1}, "SkeletonInMotion_20")
 
     .to("#LightsOff", {autoAlpha:1, duration: .01}, "+=.05")
+    // document.div.style.backgroundColor = 'pink'
+
+
+    // gsap.set("#preloader_screenfill", {scale:500, autoAlpha:1, duration: .01})
     .to("#preloader", {alpha:0, duration: .3, onComplete:removePreLoader}, "+=.5");
     return tl;
 }
