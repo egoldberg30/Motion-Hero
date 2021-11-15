@@ -546,13 +546,10 @@ function PreLoader(){
     .to("#RFingerA2", {morphSVG:"#RFingerA2_20", duration: .1}, "SkeletonInMotion_20")
     .to("#RFingerA1", {morphSVG:"#RFingerA1_20", duration: .1}, "SkeletonInMotion_20")
     .to("#RWrist", {morphSVG:"#RWrist_20", duration: .1}, "SkeletonInMotion_20")
-
-    .to("#LightsOff", {autoAlpha:1, duration: .01}, "+=.05")
-    // document.div.style.backgroundColor = 'pink'
-
-
-    // gsap.set("#preloader_screenfill", {scale:500, autoAlpha:1, duration: .01})
+    
+    tl.to("#LightsOff", {autoAlpha:1, duration: .001}, "+=.05")
     .to("#preloader", {alpha:0, duration: .3, onComplete:removePreLoader}, "+=.5");
+
     return tl;
 }
 
@@ -568,6 +565,7 @@ function Hero(){
       .from("#hero_h2",{duration:.75, alpha:0, y:"+70"}, "-=90%")
       .from("#content_h2",{duration:.75, alpha:0, y:"+70"}, "-=60%")
       .from("h3",{duration:.6, alpha:0, y:"+70"}, "-=90%");
+
     return tl;
 }
 
