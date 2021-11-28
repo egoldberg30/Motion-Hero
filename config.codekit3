@@ -7,7 +7,7 @@
       "uuidString" : "F46A1F14-290B-4618-AEB5-E9856F652729"
     }
   ],
-  "creatorBuild" : "34214",
+  "creatorBuild" : "34264",
   "files" : {
     "\/.gitattributes" : {
       "cB" : 0,
@@ -1599,6 +1599,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
